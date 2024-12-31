@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-solid",
+  "name": "sarubo-homepage-front",
   "version": "0.0.0",
   "description": "",
   "type": "module",
@@ -11,12 +11,15 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "vite": "^6.0.0",
     "vite-plugin-pages": "^0.32.4",
-    "vite-plugin-solid": "^2.11.0"
+    "vite-plugin-solid": "^2.11.0",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.1",
+    "@solidjs/meta": "^0.29.4",
     "solid-js": "^1.9.3"
   }
 }
