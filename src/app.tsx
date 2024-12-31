@@ -6,28 +6,27 @@ const App: Component = (props: { children: Element }) => {
 
   return (
     <>
-      <nav class="bg-gray-200 text-gray-900 px-4">
-        <ul class="flex items-center">
-          <li class="py-2 px-4">
-            <A href="/" class="no-underline hover:underline">
+      <nav>
+        <ul>
+          <li>
+            <A href="/">
               Home
             </A>
           </li>
-          <li class="py-2 px-4">
-            <A href="/about" class="no-underline hover:underline">
+          <li>
+            <A href="/about">
               About
             </A>
           </li>
-          <li class="py-2 px-4">
-            <A href="/error" class="no-underline hover:underline">
+          <li>
+            <A href="/error">
               Error
             </A>
           </li>
 
-          <li class="text-sm flex items-center space-x-1 ml-auto">
+          <li>
             <span>URL:</span>
             <input
-              class="w-75px p-1 bg-white text-sm rounded-lg"
               type="text"
               readOnly
               value={location.pathname}
