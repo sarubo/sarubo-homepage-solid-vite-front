@@ -1,9 +1,6 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
-
-import { Router } from "@solidjs/router";
 import { App } from "~/app";
-import routes from "~solid-pages";
 
 const root = document.getElementById("root");
 
@@ -14,10 +11,5 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 if (root) {
-  render(
-    () => (
-      <Router root={(props) => <App>{props.children}</App>}>{routes}</Router>
-    ),
-    root,
-  );
+  render(() => <App />, root);
 }

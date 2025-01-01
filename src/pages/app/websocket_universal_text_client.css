@@ -1,0 +1,49 @@
+.ws-input {
+  background-color: #eee;
+  flex: auto;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.ws-input-container {
+  display: flex;
+  margin: 2px;
+}
+
+.ws-button:hover {
+  background-color: #ddd;
+}
+
+.ws-button:hover:active {
+  background-color: #ccc;
+}
+
+.ws-button {
+  background-color: #eee;
+  border-color: #bbb;
+  border-radius: unset;
+  border-style: solid;
+  border-width: 2px;
+  flex: auto;
+  font-size: 25px;
+  margin: 0;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.ws-textarea-container {
+  display: flex;
+  margin: 2px;
+  margin-top: 16px;
+}
+
+.ws-textarea {
+  background-color: #eee;
+  border: 0;
+  flex: auto;
+  margin: 0;
+  padding: 0;
+  resize: none;
+  font-size: 16px;
+}

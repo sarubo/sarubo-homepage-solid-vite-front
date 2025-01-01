@@ -13,6 +13,13 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
+    proxy: {
+      "/api": "http://localhost:8002",
+      "/websocket": {
+        target: "ws://localhost:8002",
+        ws: true,
+      },
+    },
   },
   build: {
     target: "esnext",

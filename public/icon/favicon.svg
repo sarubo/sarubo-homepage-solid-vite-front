@@ -1,0 +1,23 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- height="192" width="192" in svg -->
+  <style>
+    rect {
+      fill: #FFFFFFCC;
+    }
+    polygon {
+      fill: #000000CC;
+    }
+    @media (prefers-color-scheme: dark) {
+      rect {
+        fill: #000000CC;
+      }
+      polygon {
+        fill: #FFFFFFCC;
+      }
+    }
+  </style>
+  <rect width="500" height="500"/>
+  <polygon points="129,40 250,40 129,250 250,250"/>
+  <polygon points="250,40 371,40 250,250 371,250"/>
+  <polygon points="129,250 8,460 129,460 250,250 371,460 492,460 371,250 250,460"/>
+</svg>

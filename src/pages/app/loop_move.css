@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+}
+
+.grid-item {
+  align-self: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.remove-button {
+  height: 2em;
+  width: 2em;
+}
+
+.media {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

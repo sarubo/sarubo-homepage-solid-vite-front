@@ -1,26 +1,22 @@
-import { Title } from "@solidjs/meta";
-import { createSignal } from "solid-js";
+import { A } from "@solidjs/router";
+import type { JSX } from "solid-js";
+import { Counter } from "~/components/Counter";
+import { MainWithTitle } from "~/components/MainWithTitle";
+import { index } from "~/constants/headTitle";
 
-export default function Home() {
-  const [count, setCount] = createSignal(0);
-
+export default function (): JSX.Element {
   return (
-    <section>
-      <Title>sarubo {"|>"} homepage</Title>
-      <h1>Home</h1>
-      <p>This is the home page.</p>
-
-      <div>
-        <button type="button" onClick={() => setCount(count() - 1)}>
-          -
-        </button>
-
-        <output>Count: {count()}</output>
-
-        <button type="button" onClick={() => setCount(count() + 1)}>
-          +
-        </button>
-      </div>
-    </section>
+    <MainWithTitle title={index}>
+      <>
+        <Counter />
+        <p>
+          {"Visit "}
+          <A href="https://start.solidjs.com" target="_blank" rel="noreferrer">
+            start.solidjs.com
+          </A>
+          {" to learn how to build SolidStart apps."}
+        </p>
+      </>
+    </MainWithTitle>
   );
 }
